@@ -20,3 +20,11 @@ def about(request) -> HttpResponse:
         'text_on_page': 'Текст о том какой классный этот интернет магазин.'
     }
     return render(request, 'main/about.html', context)
+
+
+def contact(request) -> HttpResponse:
+    return render(request, 'main/contact.html')
+
+
+def delivery_payment(request) -> HttpResponse:
+    return render(request, 'main/delivery_payment.html')
