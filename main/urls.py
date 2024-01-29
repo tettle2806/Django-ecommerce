@@ -3,7 +3,7 @@ from django.urls import path, URLResolver
 from . import views
 
 
-app_name = 'main'
+app_name: str = 'main'
 urlpatterns: list[URLResolver] = [
     path('', views.index, name='index'),
     path('about/', views.about, name='about'),
